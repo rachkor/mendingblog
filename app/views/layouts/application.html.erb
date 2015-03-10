@@ -9,10 +9,10 @@
 </head>
 
 <body>
-  <%= render 'sidebar' %>
+  <%= render 'posts/sidebar' %>
 
   <div id="main_content">
-  	<%= render 'header' %>
+  	<%= render 'posts/header' %>
 
   	<% flash.each do |name, msg| %>
   	<%= content_tag(:div, msg, class: "alert")%>
