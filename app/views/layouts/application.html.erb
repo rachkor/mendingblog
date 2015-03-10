@@ -9,38 +9,10 @@
 </head>
 
 <body>
-  <div id="sidebar">
-  	<div id="logo">
-  	  <%= link_to "Mending Me", root_path %>
-  	</div>
-
-
-	<ul>
-	  <li class="category">Website</li>
-	  <li><%= link_to "Blog", root_path%></li>
-	  <li>About Me</li>
-	</ul>
-
-	<ul>
-	  <li class="category">Social</li>
-	  <li><a href="https://twitter.com/rachaelkorinek">Twitter</a></li>
-	   <li><a href="https://github.com/rachkor">Github</a></li>
-	  <li><a href="https://linkedin.com/in/rachkorinek/en">LinkedIn</a></li>
-	  <li><a href="mailto:rachael.korinek@gmail.com">Email</a></li>
-	</ul>
-
-	<p class="sign_in">Admin</p>
-  </div>
+  <%= render 'sidebar' %>
 
   <div id="main_content">
-  	<div id="header">
-  		<p>All Posts</p>
-
-  		<div class="buttons">
-  			<%= link_to "New Post", new_post_path, class: "btn btn-primary btn-block" %>
-  			<%= link_to "Log Out", posts_path, class: "btn btn-primary btn-block" %>
-  		</div>
-  	</div>
+  	<%= render 'header' %>
 
   	<% flash.each do |name, msg| %>
   	<%= content_tag(:div, msg, class: "alert")%>
