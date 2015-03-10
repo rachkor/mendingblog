@@ -18,5 +18,7 @@
 		<li><a href="mailto:rachael.korinek@gmail.com">Email</a></li>
 	</ul>
 
-	<p class="sign_in">Admin</p>
+	<% if !user_signed_in? %>
+		<p class="sign_in">Admin</p>
+	<% end %>
 </div>
