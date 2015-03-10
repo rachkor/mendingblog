@@ -13,7 +13,7 @@
 	<% end %>
 
 	<p class="body">
-		<%= @post.body %>
+		<%= simple_format(@post.body) %>
 	</p>
 
 	<div id="comments">
