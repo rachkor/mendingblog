@@ -1,13 +1,13 @@
 <div id="sidebar">
   	<div id="logo">
+  		<%= link_to "Mending Me", root_path %>
   		<%= link_to root_path do%>
   			<img><%= image_tag "mending_me.jpg" %></img>
   		<% end %>
-  	  	<%= link_to "Mending Me", root_path %>
   	</div>
   	<br>
 	
-	
+	<div id="sidebar-body">
 		<ul>
 		  	<li class="category">Website</li>
 		  	<li><%= link_to "Blog", root_path%></li>
@@ -21,6 +21,7 @@
 		  	<li><a href="https://linkedin.com/in/rachkorinek/en">LinkedIn</a></li>
 			<li><a href="mailto:rachael.korinek@gmail.com">Email</a></li>
 		</ul>
+	</div>
 
 	<% if !user_signed_in? %>
 		<p class="sign_in">Admin</p>
