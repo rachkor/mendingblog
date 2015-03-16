@@ -1,22 +1,26 @@
 <div id="sidebar">
   	<div id="logo">
+  		<%= link_to root_path do%>
+  			<img><%= image_tag "mending_me.jpg" %></img>
+  		<% end %>
   	  	<%= link_to "Mending Me", root_path %>
   	</div>
+  	<br>
+	
+	
+		<ul>
+		  	<li class="category">Website</li>
+		  	<li><%= link_to "Blog", root_path%></li>
+		  	<li><%= link_to "About Me", about_path %></li>
+		</ul>
 
-
-	<ul>
-	  	<li class="category">Website</li>
-	  	<li><%= link_to "Blog", root_path%></li>
-	  	<li><%= link_to "About Me", about_path %></li>
-	</ul>
-
-	<ul>
-	  	<li class="category">Social</li>
-	  	<li><a href="https://twitter.com/rachaelkorinek">Twitter</a></li>
-	   	<li><a href="https://github.com/rachkor">Github</a></li>
-	  	<li><a href="https://linkedin.com/in/rachkorinek/en">LinkedIn</a></li>
-		<li><a href="mailto:rachael.korinek@gmail.com">Email</a></li>
-	</ul>
+		<ul>
+		  	<li class="category">Social</li>
+		  	<li><a href="https://twitter.com/rachaelkorinek">Twitter</a></li>
+		   	<li><a href="https://github.com/rachkor">Github</a></li>
+		  	<li><a href="https://linkedin.com/in/rachkorinek/en">LinkedIn</a></li>
+			<li><a href="mailto:rachael.korinek@gmail.com">Email</a></li>
+		</ul>
 
 	<% if !user_signed_in? %>
 		<p class="sign_in">Admin</p>

@@ -40,13 +40,14 @@ a {
   padding: 7em 0 0 0;
   border-right: 1px solid #d6dce0;
   #logo {
-    text-align: center;
+    text-align: left;
     color: #34495e;
     text-transform: uppercase;
     position: absolute;
+    left: 25px;
     right: 3em;
     top: 3em;
-    font-size: 1.5em;
+    font-size: 1.45em;
     font-weight: bold;
   }
   ul {
