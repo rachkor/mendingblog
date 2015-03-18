@@ -9,9 +9,9 @@
 	
 	<div id="sidebar-body">
 		<ul>
-		  	<li class="category">Website</li>
-		  	<li><%= link_to "Blog", root_path%></li>
-		  	<li><%= link_to "About Me", about_path %></li>
+		  	<li class="category">Site Navigation</li>
+		  	<li><%= link_to "Blog", "/blog" %></li>
+		  	<li><%= link_to "About Me", "/about" %></li>
 		</ul>
 
 		<ul>
@@ -22,8 +22,4 @@
 			<li><a href="mailto:rachael.korinek@gmail.com">Email</a></li>
 		</ul>
 	</div>
-
-	<% if !user_signed_in? %>
-		<p class="sign_in">Admin</p>
-	<% end %>
 </div>

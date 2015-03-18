@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get "/about", to: "pages#about"
 
-  mount Monologue::Engine, at: '/'
+  mount Monologue::Engine, at: '/blog'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
